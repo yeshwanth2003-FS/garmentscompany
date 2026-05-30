@@ -132,14 +132,138 @@ body{
     background-color: rgba(3, 3, 37, 0.905);
     padding: 30px;
     margin-top: 30px;
-    height: 400px;
+    height: 200px;
+    border-radius: 100px;
 
 }
 .secchild1{
+    color: white;
+      display: flex;
+      flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-left: 30px;
+}
+
+.secchild1 span{
+    color: yellow;
+}
+.head{
+    background-color: rgba(3, 3, 37, 0.905);
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
+   margin-left: 200px;
+   margin-right: 200px;
+   border-radius: 50px;
+   height: 80px;
+}
+.head span{
+    color: yellow;
+
+}
+.cardsparent{
+    
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    transition: 0.5s ease;
+
+    
+
+}
+.cardchild{
+    background-color: rgba(3, 3, 37, 0.905);
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    
+}
+
+
+.cardsparent img{
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+}
+.cardchild span{
+    color: yellow;
+}
+.cardchild:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+}
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.iconparent{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+  font-size:medium;
+  padding: 50px;
+  position: relative;
+  bottom: 10px;
+
+
+
+}
+.iconchild{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+
+}
+.iconparent img{
+    height: 50px;
+    width: 50px;
+}
+.tailorpro{
+    background-color: rgba(3, 3, 37, 0.905);
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 400px;
+
+
+}
+.tailorpro2{
     background-color: white;
-    padding: 30px;
-    border-radius: 100px;
-    height: 300px;
-    width: 400px;
-   
-} 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 250px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 30PX;
+}
+.tailorpro img{
+    width: 100px;
+    height: 100px;
+}
