@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>login</title>
     <style>
-        .register-parent{
-    width: 500px;
-    margin: 50px auto;
+        .login-parent{
+    width: 450px;
+    margin: 100px auto;
     background-color: #1E293B;
     padding: 40px;
     border-radius: 30px;
@@ -15,27 +15,24 @@
     box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
 }
 
-.register-header{
+.login-header{
     text-align: center;
     margin-bottom: 30px;
 }
 
-.register-header h3{
+.login-header h3{
     color: #f4b400;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.register-form{
+.login-form{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
-.register-form input[type="text"],
-.register-form input[type="email"],
-.register-form input[type="number"],
-.register-form input[type="password"]{
+.login-form input{
     padding: 15px;
     border: none;
     border-radius: 12px;
@@ -43,14 +40,23 @@
     font-size: 15px;
 }
 
-.register-form label{
+.login-form input:focus{
+    border: 2px solid #f4b400;
+}
+
+.remember{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
     font-size: 14px;
 }
 
-.register-form button{
+.remember a{
+    color: #f4b400;
+    text-decoration: none;
+}
+
+.login-form button{
     background-color: #f4b400;
     color: #1E1B4B;
     border: none;
@@ -62,35 +68,52 @@
     transition: all 0.3s ease;
 }
 
-.register-form button:hover{
+.login-form button:hover{
     transform: translateY(-5px);
     background-color: #ffd54f;
 }
 
+.signup{
+    text-align: center;
+}
 
+.signup a{
+    color: #f4b400;
+    text-decoration: none;
+    font-weight: 600;
+}
     </style>
 </head>
 <body>
-    <div class="register-parent">
+    <div class="login-parent">
 
-    <div class="register-header">
-        <h3>Create Your Account</h3>
-        <p>Join TailorHub and connect with the right opportunities</p>
+    <div class="login-header">
+        <h3>Welcome Back</h3>
+        <p>Login to your TailorHub account</p>
     </div>
 
-    <div class="register-form">
-        <input type="text" placeholder="Full Name">
+    <div class="login-form">
+
         <input type="email" placeholder="Email Address">
-        <input type="number" placeholder="Mobile Number">
+
         <input type="password" placeholder="Password">
-        <input type="password" placeholder="Confirm Password">
 
-        <label>
-            <input type="checkbox">
-            I agree to the terms and conditions
-        </label>
+        <div class="remember">
+            <label>
+                <input type="checkbox">
+                Remember Me
+            </label>
 
-        <button>Register Now</button>
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <button>Login</button>
+
+        <p class="signup">
+            Don't have an account?
+            <a href="registerform.html">Register Now</a>
+        </p>
+
     </div>
 
 </div>
