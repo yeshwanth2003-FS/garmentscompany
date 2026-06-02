@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-   font-family: 'Inter', sans-serif;
+   font-family: 'Montserrat', sans-serif;
 
 }
 .logoparent{
@@ -130,45 +130,71 @@ body{
       background-color: #f4b400;
       transition: all 0.3s ease;
 }
+
+
 .sec2{
+  margin: 50px;
+ 
+    border-radius: 300px;
+    margin-top:70px;
     background-color: rgba(3, 3, 37, 0.905);
     padding: 30px;
-    margin-top: 30px;
-    height: 200px;
-    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+   gap: 30px;
+   
 
 }
-.secchild1{
+
+.secchild1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: relative;
+   top: 20px;
+}
+
+.secchild2{
     color: white;
       display: flex;
       flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+   padding-top: 20px;
     gap: 30px;
-    padding-left: 30px;
+  
+    flex-wrap: wrap;
+    width: 900px;
+    height: 250px;
+    margin-left: 120px;
+    
+   
 }
 
-.secchild1 span{
+
+.secchild2 span{
      color: #f4b400;
 }
+
+
+
 .head{
+     margin-top:30px;
     background-color: rgba(3, 3, 37, 0.905);
    color: white;
    display: flex;
+  
+   height: 80px;
+   padding: 10px;
    justify-content: center;
    align-items: center;
-   margin: 20px;
-   margin-left: 200px;
-   margin-right: 200px;
-   border-radius: 50px;
-   height: 80px;
 }
 .head span{
      color: #f4b400;
 
 }
 .cardsparent{
-    
+     
     padding: 30px;
     display: flex;
     gap: 20px;
@@ -176,8 +202,7 @@ body{
     transition: 0.5s ease;
     background-color:  rgba(3, 3, 37, 0.905);
     justify-content: center;
-
-    
+   
 
 }
 .cardchild{
@@ -195,6 +220,7 @@ body{
 
     
 }
+
 
 
 .cardsparent img{
